@@ -1,2 +1,2 @@
-![cloud analytics overview](img/cloudvista-streaming-ai.png)
+![cloud analytics overview](img/cloudvista-precision-AI.png)
 
