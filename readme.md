@@ -21,7 +21,7 @@ A comprehensive approach is thus needed to provide full-fidelity access to VISTA
 
 ### Proposal
 
-Extraction of the VISTA’s database (VA FileMan) with full fidelity (all of the data, with full granularity of all files and fields) into a modern, mainstream, cloud-native database of the same form (document database) allows comprehensive continuity of access, management, and query  of all Veteran health data in a modern, mainstream, maintainable, cloud-native database in the VA Enterprise Cloud. (Figure 1). 
+Extraction of VISTA’s database (VA FileMan) with full fidelity (all of the data, with full granularity of all files and fields) into a modern  commercially-supported  cloud-native database of the same form (document database) in the VA Enterprise Cloud. This will allow comprehensive continuity of access, management, and query of all Veteran health data in a modern, mainstream, maintainable, cloud-native database, and connect easily via modern APIs to the many VA analytical systems that are also hosted in the VA Enterprise Cloud. (Figure 1).
 
 A full, detailed report of all VISTA data migrated would be generated from the VISTA MongoDB replica to enable planning and scoping of data management for VA.  The report would contrast the FileMan data of each VISTA with the others.  The mechanisms used to make all the reports will serve as examples for how the MongoDB replica may easily be queried and processed in other projects going forward using the standard MongoDB tools, interfaces, and technology.
 
