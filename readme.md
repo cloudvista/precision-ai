@@ -1,5 +1,5 @@
 
-## Comprehensive Full-Fidelity Access of VISTA data in Modern Mainstream Cloud-Native Document Database to Enable Precision AI and Analytics
+## Comprehensive Full-Fidelity VISTA data in Modern Mainstream Cloud-Native Document Database to Enable Precision AI and Analytics
 
 ### Overview
 ![cloud analytics overview](img/cloudvista-precision-AI.png)
@@ -7,36 +7,36 @@
 
 ### Background
 
-The VHA Information Systems Technology and Architecture (VISTA) is the comprehensive lifelong health record of all veterans, and supports the clinical, business, and financial operations of the VHA. VISTA’s database contains over  300 million veteran-years of data spanning over 35 years and continues to grow at the rate of over four million new lab tests, documents, and images each day. VHA has published over 35,000 peer reviewed medical studies over the past decade based on VISTA data, enabling the VHA to provide the highest quality evidence-based healthcare in the United States.
+The VHA Information Systems Technology and Architecture (VISTA) is the comprehensive lifelong healthcare delivery system of the VA designed and built to support the clinical, business, and financial operations of the VHA. VISTA’s database contains over  300 million veteran-years of data spanning over 35 years and continues to grow at the rate of over four million new lab tests, documents, and images each day. VHA has published over 35,000 peer reviewed medical studies over the past decade based on VISTA data, enabling the VHA to provide the highest quality evidence-based healthcare in the United States.
 
-VISTA’s database is designed and managed as a hierarchical filestore, with its data defined and managed by a file manager (FileMan). FileMan contains over 6,000 files and 75,000 fields with cross-references and pointers connecting all of these files and fields in a well-defined data model.
+VISTA’s database is a VA-developed hierarchical file store with its data defined and managed by a file manager (VA FileMan). VA FileMan contains over 6,000 files and 75,000 fields with cross-references and pointers connecting all of these files and fields in a well-defined data model. In present day terms, VA Fileman would be called a Document database, for which there are several commercial examples (MongoDB, DocumentDB, and others).
 
 ### Problem statement
 
-There are several mechanisms to extract subsets of FileMan data for secondary use but there is no comprehensive mechanism to export, query, and manage all FileMan data.  Currently, less than 15% of FileMan data is accessible to reporting systems, creating blind spots that may affect the quality of research, trustworthiness of AI models, and accuracy clinical decision support systems (Table 1).
+There are several mechanisms to extract subsets of FileMan data for secondary use and analytics, but no comprehensive mechanism to export, query, and manage all FileMan data.   Only a small subset of FileMan data is accessible to reporting systems, creating blind spots that affect the quality of research, trustworthiness of AI models, and accuracy clinical decision support systems.
 
-A comprehensive approach is thus needed to provide full-fidelity access to VISTA data for interfacing, integration, and syndication of VISTA data with new cloud-native reporting and research systems to support full-fidelity machine learning, analytics, clinical decision support, and preservation of veteran data in computable form.
+A comprehensive approach is thus needed to provide full-fidelity access to VISTA data for interfacing, integration, and syndication of VISTA data with new cloud-native reporting and research systems, and to support full-fidelity machine learning, analytics, clinical decision support, and preservation of veteran data in computable form.
 
 
 ### Proposal
 
-Replication of the VISTA’s hierarchical database (FileMan) with full fidelity (lossless, automated, 1:1 mapping of all fields) into a modern, mainstream, cloud-native database of the same form (hierarchical; includes MongoDB and other NoSQL databases)  allows comprehensive continuity of access, management, and query  of all Veteran health data in a modern, mainstream, maintainable, cloud-native database in the VA Enterprise Cloud. (Figure 1). 
+Extraction of the VISTA’s database (VA FileMan) with full fidelity (all of the data, with full granularity of all files and fields) into a modern, mainstream, cloud-native database of the same form (document database) allows comprehensive continuity of access, management, and query  of all Veteran health data in a modern, mainstream, maintainable, cloud-native database in the VA Enterprise Cloud. (Figure 1). 
 
 A full, detailed report of all VISTA data migrated would be generated from the VISTA MongoDB replica to enable planning and scoping of data management for VA.  The report would contrast the FileMan data of each VISTA with the others.  The mechanisms used to make all the reports will serve as examples for how the MongoDB replica may easily be queried and processed in other projects going forward using the standard MongoDB tools, interfaces, and technology.
 
 
 ###  Cloud-native Document Database Advantages
-Criteria | Fileman Document DB | Commercial Cloud-native Document DB
+Criteria | VA Fileman Document DB | Commercial Cloud-native Document DB
 --- | --- | ---
 Contents | All VistA data | All VistA data + refinements
 Where | VistA | VAEC 
-Support | Proprietary, Internal VA | Commercial/Commonly used
+Support | Proprietary (VA-internal)  | Commercial (Mainstream Commodity )
 Indexing | Per Patient | Flexible, incremental
-Modeled | Schema (DD) | VistA Data Model (FileMan Schema Enhanced)
-Access | Limited as Operational Database* | As much as VAEC facilities allow
-Governance | VistA Efficiency Focused | Analytics focused, distinction of Clinical, Business and Operational data
+Modeled | Fileman Schema (data dictionary) | VistA Data Model (FileMan Schema Enhanced)
+Access | Restricted to Operations* | No restriction; As much as VAEC facilities allow
+Governance | VistA Efficiency focused | Analytics focused, distinction of Clinical, Business and Operational data
 
-* cannot allow outside querying as database must support active clinical and business operations.
+* VA Fileman cannot allow outside querying as database must support over 200 million transactions each day for active clinical and business operations.
 
 ### Benefits
 
@@ -47,29 +47,33 @@ Preserving the FileMan "framing" for data ensures preservation of the semantics 
 
 ### Assumptions
 
-1. FileMan is a Model
+1. __FileMan is a Model__
 Pointers, Dates, Types, Cross References, Hierarchy, and Document Mix
-2. One can replicate the FileMan Model with full fidelity in a modern commercial datastore 
+2. __One can replicate the FileMan Model with full fidelity in a modern commercial datastore__ 
 FileMan-level replication preserves all definition, structure, pointers, and cross-references
-3. A Full-Fidelity FileMan Model Exporter Exists and doesn't need new work. 
+3. __A Full-Fidelity FileMan Model Exporter Exists and doesn't need new work.__
 This was created under a prior VA project and is available immediately 
-4. Exported FileMan-consistent data fits natively into commercial Document Stores 
+4. __Exported FileMan-consistent data fits natively into commercial Document Stores__ 
 This includes MongoDB, and Azure- and AWS- managed versions of MongoDB
-5. Replication will be in a FedRAMP-HIGH VA Enterprise Cloud Production Environment 
+5. __Replication will be in a FedRAMP-HIGH VA Enterprise Cloud Production Environment__
 The full-fidelity replica of FileMan will contain PHI/PII
-6.  VA has capacity in managing MongoDB databases
+6.  __VA has capacity in managing MongoDB databases__
 VA currently manages a massive MongoDB database farm in the VA Enterprise Cloud
 
 
 ### Technical Note
 
-Only a direct, full-fidelity 1:1 replication of the FileMan hierarchical data model and data within a modern database of the identical form (i.e., hierarchical) will avoid the data loss involved with transforming the data into a different kind of database (relational or otherwise). Such a full-fidelity replication will comprehensively capture, describe and ‘liberate’ all FileMan data in a modern, maintainable, accessible form. VA has developed this automated  FileMan data model migration tool  and this is available to the government at no cost. Expertise in FileMan will nevertheless still be required to execute this replication strategy.
+The direct Fileman-to-DocumentDB replication is best described as an extract-and-load ("EL") process, rather than an exxtract-transform-load (ETL) process. It does not involve any transformation, which is precisely why it is lossless and full-fidelity.
+
+Only a direct, full-fidelity 1:1 replication of the FileMan hierarchical data model and data within a modern database of the identical form (i.e., Document DB) will avoid the data loss involved with transforming the data into a different kind of database (relational or otherwise). 
+
+Such a full-fidelity direct replication will comprehensively capture, describe and ‘liberate’ all FileMan data in a modern, maintainable, accessible form. VA has developed this automated  FileMan data model migration tool and this is available to the government at no cost. Expertise in FileMan will nevertheless still be required to execute this replication strategy.
 
 What full-fidelity FileMan-MongoDB replication is not:  
 * Not a generic process: No commercial tool or data platform has this capability.
 * Not a proprietary process: No vendor-proprietary tools or technology involved.
 * Not a  lift-and-shift process: Moving databases to a new datacenter does not fix data accessibility.
-* Not an  ETL process (which ignores the FileMan model and replaces with a different one).  
+* Not an  extract-transform-load (ETL) process: This ignores the FileMan model and replaces with a different one.
 
 
 ### References
