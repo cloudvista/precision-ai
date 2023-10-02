@@ -1,6 +1,5 @@
 
-## Comprehensive Full-Fidelity Continuity of Veteran Health Data in 
-Modern Mainstream Cloud-Native Database to Enable Precision AI and Analytics
+## Comprehensive Full-Fidelity Continuity of Veteran Health Data in Modern Mainstream Cloud-Native Database to Enable Precision AI and Analytics
 
 
 ### Background
