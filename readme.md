@@ -1,7 +1,7 @@
 
 ## Full-Fidelity VISTA data in Modern Mainstream Cloud-Native Database for Precision AI and Analytics
 
-### Overview
+
 ![cloud analytics overview](img/cloudvista-precision-AI.png)
 
 
