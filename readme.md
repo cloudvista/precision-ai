@@ -65,7 +65,7 @@ VA currently manages a massive MongoDB database farm in the VA Enterprise Cloud
 
 ### Technical Note
 
-The direct Fileman-to-DocumentDB extraction is best described as an extract-and-load ("EL") process, rather than an extract-transform-load ("ETL") process. This EL process does not involve any transformation, which is precisely why it is lossless and full-fidelity.
+The direct Fileman-to-DocumentDB extraction is best described as an extract-and-load ("EL") process, rather than an extract-transform-load ("ETL") process. __This direct extract-load process does not involve any transformation, which is precisely why it is lossless and full-fidelity.__
 
 Such a direct, full-fidelity 1:1 extraction of the FileMan data model to a modern database of the identical form (i.e.  document database) will avoid the data loss involved with transforming the data into a different kind of data model(relational or otherwise). 
 
@@ -75,7 +75,7 @@ What full-fidelity FileMan-MongoDB replication is not:
 * Not a generic process:: No commercial tool or data platform has this capability.
 * Not a proprietary process:: No vendor-proprietary tools or technology involved.
 * Not a  lift-and-shift process:: Moving databases to a new datacenter does not fix data accessibility.
-* Not an  extract-transform-load (ETL) process:  ETL requires mapping the FileMan data model to a completely different one, with associated loss of metadata, indexes, pointers, and data.  This is an extract-load (EL) process which does not involve any transformation, which is the reason it is lossless and full-fidelity representation of Fileman data.
+* Not an  extract-transform-load (ETL) process:  ETL requires mapping the FileMan data model to a completely different data model, with associated loss of metadata, indexes, pointers, and data.  This is an extract-load (EL) process which does not involve any transformation, and is the reason it is lossless and full-fidelity representation of Fileman data.
 
 
 ### References
