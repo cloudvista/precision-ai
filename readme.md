@@ -39,7 +39,7 @@ Model| Fileman Schema (data dictionary) | VistA Data Model (FileMan Schema Enhan
 Access | Restricted to Operations* | As much as VAEC facilities allow
 Governance | Operations focused | Analytics focused, distinction of Clinical, Business and Operational data
 
-* VA Fileman is neither designed for nor does it permit analytics workloads; it is designed as the operational database of VHA, and is optimized for performance and reliability.  VA Fileman supports 350,000 staff perform over 200 million transactions each day with sub-second latency and 99.999996% uptime (six sigma reliability).
+* VA Fileman is neither designed for nor does it permit analytics workloads; it is designed as the operational database of VHA, and is optimized for performance and reliability.  VA Fileman enables 350,000 staff perform over 200 million transactions each day with sub-second latency and 99.999996% uptime (six sigma reliability).
 
 ### Benefits
 
