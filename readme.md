@@ -1,6 +1,5 @@
 
-## Comprehensive Full-Fidelity Access of VISTA data in 
-Modern Mainstream Cloud-Native Database to Enable Precision AI and Analytics
+## Comprehensive Full-Fidelity Access of VISTA data in Modern Mainstream Cloud-Native Database to Enable Precision AI and Analytics
 
 
 ### Background
