@@ -7,6 +7,7 @@
 
 ### Background
 
+
 The VHA Information Systems Technology and Architecture (VISTA) is the comprehensive lifelong healthcare delivery system of the VA designed and built to support the clinical, business, and financial operations of the VHA. VISTA’s database contains over  300 million veteran-years of data spanning over 35 years and continues to grow at the rate of over four million new lab tests, documents, and images each day. VHA has published over 35,000 peer reviewed medical studies over the past decade based on VISTA data, enabling the VHA to provide the highest quality evidence-based healthcare in the United States.
 
 VISTA’s database is VA-designed and developed and is called VA Fileman.  VA FileMan is a hierachical file store, and contains over 6,000 files and 75,000 fields with cross-references and pointers connecting all of these files and fields in a well-defined data model. In present day terms, VA Fileman would be classified as a Document database, for which there are several commercial examples (MongoDB, DocumentDB, and others).
