@@ -73,10 +73,10 @@ Such a direct, full-fidelity 1:1 extraction of the FileMan data model to a moder
 Full-fidelity direct replication will comprehensively capture, describe and ‘liberate’ all FileMan data in a modern, maintainable, mainstream database will allow comprehensive access with commity tools.  VA has developed this automated  FileMan data model migration tool and this is available to the government at no cost. Expertise in FileMan will nevertheless still be required to execute this replication strategy.
 
 What full-fidelity FileMan-MongoDB replication is not:  
-* Not a generic process:: No commercial tool or data platform has this capability.
-* Not a proprietary process:: No vendor-proprietary tools or technology involved.
-* Not a  lift-and-shift process:: Moving databases to a new datacenter does not fix data accessibility.
-* Not an  extract-transform-load (ETL) process:  ETL requires extracting subsets of Fileman's data and transforming this so it can 'fit' into a completely different database, with associated loss of metadata, indexes, pointers, and data.  
+* Not a generic process: No commercial tool or data platform has this capability.
+* Not a proprietary process: No vendor-proprietary tools or technology involved.
+* Not a  lift-and-shift process: Moving databases to a new datacenter does not fix data accessibility.
+* Not an  extract-transform-load (ETL) process: ETL requires extracting subsets of Fileman's data and transforming this so it can 'fit' into a completely different database, with associated loss of metadata, indexes, pointers, and data.  
   
 
 ### References
