@@ -23,7 +23,6 @@ A full, detailed report of all VISTA data migrated would be generated from the V
 
 ![cloud analytics overview](img/cloudvista-precision-AI.png)
 
-
 Criteria | Fileman Document DB | Commercial Document DB
 --- | --- | ---
 Contents | All VistA data | All VistA data + refinements
@@ -74,5 +73,3 @@ What full-fidelity FileMan-MongoDB replication is not:
 
 ●	VA FileMan Documentation:  https://www.va.gov/vdl/application.asp?appid=5  
 ●	FileMan model management: http://vistadataproject.info
-
-
