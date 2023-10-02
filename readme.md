@@ -23,7 +23,9 @@ A full, detailed report of all VISTA data migrated would be generated from the V
 
 ![cloud analytics overview](img/cloudvista-precision-AI.png)
 
-Criteria | Fileman Document DB | Commercial Document DB
+
+###  Cloud-native Document Database  alternatives
+Criteria | Fileman Document DB | Commercial Cloud-native Document DB
 --- | --- | ---
 Contents | All VistA data | All VistA data + refinements
 Where | VistA | VAEC 
