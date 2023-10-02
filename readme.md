@@ -24,6 +24,18 @@ A full, detailed report of all VISTA data migrated would be generated from the V
 ![cloud analytics overview](img/cloudvista-precision-AI.png)
 
 
+Criteria | Fileman Document DB | Commercial Document DB
+--- | --- | ---
+Contents | All VistA data | All VistA data + refinements
+Where | VistA | VAEC 
+Support | Proprietary, Internal VA | Commercial/Commonly used
+Indexing | Per Patient | Flexible, incremental
+Modeled | Schema (DD) | VistA Data Model (FileMan Schema Enhanced)
+Access | Limited as Operational Database* | As much as VAEC facilities allow
+Governance | VistA Efficiency Focused | Analytics focused, distinction of Clinical, Business and Operational data
+
+* cannot allow outside querying as database must support active clinical and business operations.
+
 ### Benefits
 
 MongoDB-based FileMan data provides comprehensive access to all Veteran data directly, securely, with full granularity and data definition of FileMan, but without any of the legacy code or infrastructure to maintain. 
@@ -64,16 +76,3 @@ What full-fidelity FileMan-MongoDB replication is not:
 ●	FileMan model management: http://vistadataproject.info
 
 
-
-
-Criteria | Fileman Document DB | Commercial Document DB
---- | --- | ---
-Contents | All VistA data | All VistA data + refinements
-Where | VistA | VAEC 
-Support | Proprietary, Internal VA | Commercial/Commonly used
-Indexing | Per Patient | Flexible, incremental
-Modeled | Schema (DD) | VistA Data Model (FileMan Schema Enhanced)
-Access | Limited as Operational Database* | As much as VAEC facilities allow
-Governance | VistA Efficiency Focused | Analytics focused, distinction of Clinical, Business and Operational data
-
-* cannot allow outside querying as database must support active clinical and business operations.
