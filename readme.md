@@ -81,4 +81,4 @@ What full-fidelity FileMan-MongoDB replication is not:
 ### References
 
 ●	VA FileMan Documentation:  https://www.va.gov/vdl/application.asp?appid=5  
-●	FileMan model management: http://vistadataproject.info
+●	FileMan model management: https://github.com/cloudvista/master-data-managment
