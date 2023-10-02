@@ -15,10 +15,9 @@ VISTA’s database is VA-designed and developed and is called VA Fileman.  VA Fi
 
 Fileman is the operational database of VHA. It is optimized for transaction processing, performance, and reliability for veteran care. Each day Fileman supports 350,000 staff perform over 200 million transactions with millisecond latency and 99.999996% uptime (six sigma reliability). Fileman is indexed on a per-patient basis to optimize the performance of the clinical staff for veteran care; it is not indexed or designed for research, analytics, or population queries.
 
-Over the years, VA has developed several mechanisms to extract subsets of FileMan data for secondary use and analytics, but no comprehensive mechanism to export, query, and manage all FileMan data.  Currently only a small subset of FileMan data is accessible to reporting systems, creating blind spots that affect the quality of research, trustworthiness of AI models, and accuracy clinical decision support systems.
+Over the years, VA has developed several mechanisms to extract subsets of FileMan data for secondary use and analytics, but there is no comprehensive mechanism to export, query, and manage all FileMan data.  Currently only a small subset of FileMan data is accessible to analytical systems, creating blind spots that affect the quality of research, trustworthiness of AI models, and accuracy clinical decision support systems.
 
-A comprehensive approach is thus needed to provide full-fidelity access to VISTA data for interfacing, integration, and syndication of VISTA data with new cloud-native reporting and research systems, and to support full-fidelity machine learning, analytics, clinical decision support. Finally, a modern, portable, mainstream database is required by VA to meet VHA data governance mandates that require preserving all veteran health data in digital computable form for 75 years.
-
+A comprehensive approach is thus needed to provide full-fidelity access to VISTA data for interfacing, integration, and syndication of VISTA data with new cloud-native reporting and research systems, and to support full-fidelity machine learning, analytics, and clinical decision support. Finally, a portable mainstream database is required by VA to meet VHA data governance mandates to preserve veteran health data in digital computable form for 75 years.
 
 ### Proposal
 
