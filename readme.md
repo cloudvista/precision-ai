@@ -52,10 +52,10 @@ VA currently manages a massive MongoDB database farm in the VA Enterprise Cloud
 Only a direct, full-fidelity 1:1 replication of the FileMan hierarchical data model and data within a modern database of the identical form (i.e., hierarchical) will avoid the data loss involved with transforming the data into a different kind of database (relational or otherwise). Such a full-fidelity replication will comprehensively capture, describe and ‘liberate’ all FileMan data in a modern, maintainable, accessible form. VA has developed this automated  FileMan data model migration tool  and this is available to the government at no cost. Expertise in FileMan will nevertheless still be required to execute this replication strategy.
 
 What full-fidelity FileMan-MongoDB replication is not:  
-●	Not a generic process: No commercial tool or data platform has this capability.  
-●	Not a proprietary process: No vendor-proprietary tools or technology involved.  
-●	Not a  lift-and-shift process: Moving databases to a new datacenter does not fix data accessibility.  
-●	Not an  ETL process (which ignores the FileMan model and replaces with a different one).  
+* Not a generic process: No commercial tool or data platform has this capability.
+* Not a proprietary process: No vendor-proprietary tools or technology involved.
+* Not a  lift-and-shift process: Moving databases to a new datacenter does not fix data accessibility.
+* Not an  ETL process (which ignores the FileMan model and replaces with a different one).  
 
 
 ### References
