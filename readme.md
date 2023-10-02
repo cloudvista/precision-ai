@@ -69,7 +69,7 @@ The direct Fileman-to-DocumentDB extraction is best described as an extract-and-
 
 Such a direct, full-fidelity 1:1 extraction of the FileMan data model to a modern database of the identical form (i.e.  document database) will avoid the data loss involved with transforming the data into a different kind of data model(relational or otherwise). 
 
-Such a full-fidelity direct replication will comprehensively capture, describe and ‘liberate’ all FileMan data in a modern, maintainable, mainstream database will allow comprehensive access with commity tools.  VA has developed this automated  FileMan data model migration tool and this is available to the government at no cost. Expertise in FileMan will nevertheless still be required to execute this replication strategy.
+Full-fidelity direct replication will comprehensively capture, describe and ‘liberate’ all FileMan data in a modern, maintainable, mainstream database will allow comprehensive access with commity tools.  VA has developed this automated  FileMan data model migration tool and this is available to the government at no cost. Expertise in FileMan will nevertheless still be required to execute this replication strategy.
 
 What full-fidelity FileMan-MongoDB replication is not:  
 * Not a generic process:: No commercial tool or data platform has this capability.
