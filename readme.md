@@ -1,5 +1,5 @@
 
-## Comprehensive Full-Fidelity Continuity of Veteran Health Data in 
+## Comprehensive Full-Fidelity Access of VISTA data in 
 Modern Mainstream Cloud-Native Database to Enable Precision AI and Analytics
 
 
