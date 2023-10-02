@@ -10,3 +10,5 @@ Indexing | Per Patient | Flexible, incremental
 Modeled | Schema (DD) | VistA Data Model (FileMan Schema Enhanced)
 Access | Limited as Operational Database* | As much as VAEC facilities allow
 Governance | VistA Efficiency Focused | Analytics focused, distinction of Clinical, Business and Operational data
+
+* cannot allow outside querying as database must support active clinical and business operations.
