@@ -75,7 +75,7 @@ What full-fidelity FileMan-MongoDB replication is not:
 * Not a generic process:: No commercial tool or data platform has this capability.
 * Not a proprietary process:: No vendor-proprietary tools or technology involved.
 * Not a  lift-and-shift process:: Moving databases to a new datacenter does not fix data accessibility.
-* Not an  extract-transform-load (ETL) process:  ETL ignores the FileMan model and replaces with a different one. This is an extract-load (EL) process which does not transform any of the 
+* Not an  extract-transform-load (ETL) process:  ETL requires mapping the FileMan data model to a completely different one, with associated loss of metadata, indexes, pointers, and data.  This is an extract-load (EL) process which is a lossless direct export and load to a database with a compatible data model; no transformation. 
 
 
 ### References
