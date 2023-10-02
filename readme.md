@@ -1,6 +1,9 @@
 
 ## Comprehensive Full-Fidelity Access of VISTA data in Modern Mainstream Cloud-Native Database to Enable Precision AI and Analytics
 
+### Overview
+![cloud analytics overview](img/cloudvista-precision-AI.png)
+
 
 ### Background
 
@@ -21,10 +24,8 @@ Replication of the VISTA’s hierarchical database (FileMan) with full fidelity 
 
 A full, detailed report of all VISTA data migrated would be generated from the VISTA MongoDB replica to enable planning and scoping of data management for VA.  The report would contrast the FileMan data of each VISTA with the others.  The mechanisms used to make all the reports will serve as examples for how the MongoDB replica may easily be queried and processed in other projects going forward using the standard MongoDB tools, interfaces, and technology.
 
-![cloud analytics overview](img/cloudvista-precision-AI.png)
 
-
-###  Cloud-native Document Database  alternatives
+###  Cloud-native Document Database Comparison
 Criteria | Fileman Document DB | Commercial Cloud-native Document DB
 --- | --- | ---
 Contents | All VistA data | All VistA data + refinements
