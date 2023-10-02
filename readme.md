@@ -18,7 +18,7 @@ Fileman is the operational database of VHA. It is optimized for transaction proc
 
 Over the years, VA has developed several mechanisms to extract subsets of FileMan data for secondary use and analytics, but there is no comprehensive mechanism to export, query, and manage all FileMan data.  Currently only a relatively small subset of FileMan's operational data is accessible to analytical systems, creating blind spots that may affect the quality of research, trustworthiness of AI models, and accuracy of clinical decision support systems.
 
-A comprehensive approach is thus needed to provide full-fidelity access to VISTA data for interfacing, integration, and syndication of VISTA data with new cloud-native reporting and research systems, and to support full-fidelity machine learning, analytics, and clinical decision support. Finally, a  mainstream database is required by VA to meet VHA data governance mandates to preserve veteran health data in portable computable form for 75 years.
+A comprehensive approach is thus needed to provide full-fidelity access to VISTA data for interfacing, integration, and syndication of VISTA data with new cloud-native reporting and research systems, and to support full-fidelity machine learning, analytics, and clinical decision support. Finally, a modern, mainstream, commercially maintainable database is required by VA to meet VHA data governance mandates to preserve veteran health data in portable computable form for 75 years.
 
 ### Proposal
 
