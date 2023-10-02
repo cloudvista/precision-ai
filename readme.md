@@ -26,18 +26,19 @@ Extraction of VISTA’s database (VA FileMan) with full fidelity (all of the dat
 A full, detailed report of all VISTA data migrated would be generated from the VISTA MongoDB replica to enable planning and scoping of data management for VA.  The report would contrast the FileMan data of each VISTA with the others.  The mechanisms used to make all the reports will serve as examples for how the MongoDB replica may easily be queried and processed in other projects going forward using the standard MongoDB tools, interfaces, and technology.
 
 
-###  Cloud-native Document Database Advantages
-Criteria | VA Fileman Document DB |  Cloud-native Document DB
+###  VISTA Cloud-native Document Database
+Criteria | VA Fileman database|  Cloud-native database
 --- | --- | ---
+Database Model | Document DB | Document DB
 Contents | All VistA data | All VistA data + refinements
-Where | VistA | VA Enterprise Cloud (VAEC) 
-Support | VA-internal (bespoke, proprietary)  | Commercial (mainstream, commodity )
-Indexing | Per Patient | Flexible, incremental
-Modeled | Fileman Schema (data dictionary) | VistA Data Model (FileMan Schema Enhanced)
-Access | Restricted to Operations* | No restriction; As much as VAEC facilities allow
+Where | VistA | VA Enterprise Cloud 
+Support | VA-internal  (bespoke, proprietary)  | Commercial (mainstream, commodity )
+Indexing | Per Patient (rigid) | Population (flexible, adaptable)
+Model| Fileman Schema (data dictionary) | VistA Data Model (FileMan Schema Enhanced)
+Access | Restricted to Operations* | As much as VAEC facilities allow
 Governance | Operations focused | Analytics focused, distinction of Clinical, Business and Operational data
 
-* VA Fileman cannot allow querying or analytics workloads as the database provides for the operational over 200 million transactions each for 350,000 active users  active clinical and business operations.
+* VA Fileman cannot allow analytics workloads as the database provides for the operational over 200 million transactions each for 350,000 staff providing veteran care and services each day.
 
 ### Benefits
 
