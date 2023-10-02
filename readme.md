@@ -14,7 +14,7 @@ VISTA’s VA-designed and developed database is called VA Fileman.  VA FileMan i
 
 ### Problem statement
 
-Fileman is the operational database of VHA. It is optimized for transaction processing, performance, and reliability for veteran care. Each day Fileman supports 350,000 staff perform over 200 million transactions with sub-second latency and 99.999996% uptime (six-sigma reliability). Fileman is indexed on a per-patient basis and optimized for performance for the clinical staff to provide veteran care. Fileman is not indexed or designed for research, analytics, or population queries.
+Fileman is the operational database of VHA. It is optimized for transaction processing, performance, and reliability for veteran care. Each day Fileman enables 350,000 staff perform over 200 million transactions with sub-second latency and 99.999996% uptime (six-sigma reliability). Fileman is indexed on a per-patient basis and optimized for performance for the clinical staff to provide veteran care. Fileman is not indexed or designed for research, analytics, or population queries.
 
 Over the years, VA has developed several mechanisms to extract subsets of FileMan data for secondary use and analytics, but there is no comprehensive mechanism to export, query, and manage all FileMan data.  Currently only a relatively small subset of FileMan's operational data is accessible to analytical systems, creating blind spots that may affect the quality of research, trustworthiness of AI models, and accuracy clinical decision support systems.
 
