@@ -26,17 +26,17 @@ A full, detailed report of all VISTA data migrated would be generated from the V
 
 
 ###  Cloud-native Document Database Advantages
-Criteria | VA Fileman Document DB | Commercial Cloud-native Document DB
+Criteria | VA Fileman Document DB |  Cloud-native Document DB
 --- | --- | ---
 Contents | All VistA data | All VistA data + refinements
-Where | VistA | VAEC 
-Support | Proprietary (VA-internal)  | Commercial (Mainstream Commodity )
+Where | VistA | VA Enterprise Cloud (VAEC) 
+Support | VA-internal (bespoke, proprietary)  | Commercial (mainstream, commodity )
 Indexing | Per Patient | Flexible, incremental
 Modeled | Fileman Schema (data dictionary) | VistA Data Model (FileMan Schema Enhanced)
 Access | Restricted to Operations* | No restriction; As much as VAEC facilities allow
-Governance | VistA Efficiency focused | Analytics focused, distinction of Clinical, Business and Operational data
+Governance | Operations focused | Analytics focused, distinction of Clinical, Business and Operational data
 
-* VA Fileman cannot allow outside querying as database must support over 200 million transactions each day for active clinical and business operations.
+* VA Fileman cannot allow querying or analytics workloads as the database provides for the operational over 200 million transactions each for 350,000 active users  active clinical and business operations.
 
 ### Benefits
 
@@ -63,17 +63,17 @@ VA currently manages a massive MongoDB database farm in the VA Enterprise Cloud
 
 ### Technical Note
 
-The direct Fileman-to-DocumentDB replication is best described as an extract-and-load ("EL") process, rather than an exxtract-transform-load (ETL) process. It does not involve any transformation, which is precisely why it is lossless and full-fidelity.
+The direct Fileman-to-DocumentDB extraction is best described as an extract-and-load ("EL") process, rather than an extract-transform-load ("ETL") process. This EL process does not involve any transformation, which is precisely why it is lossless and full-fidelity.
 
-Only a direct, full-fidelity 1:1 replication of the FileMan hierarchical data model and data within a modern database of the identical form (i.e., Document DB) will avoid the data loss involved with transforming the data into a different kind of database (relational or otherwise). 
+Such a direct, full-fidelity 1:1 extraction of the FileMan data model to a modern database of the identical form (i.e.  document database) will avoid the data loss involved with transforming the data into a different kind of data model(relational or otherwise). 
 
-Such a full-fidelity direct replication will comprehensively capture, describe and ‘liberate’ all FileMan data in a modern, maintainable, accessible form. VA has developed this automated  FileMan data model migration tool and this is available to the government at no cost. Expertise in FileMan will nevertheless still be required to execute this replication strategy.
+Such a full-fidelity direct replication will comprehensively capture, describe and ‘liberate’ all FileMan data in a modern, maintainable, mainstream database will allow comprehensive access with commity tools.  VA has developed this automated  FileMan data model migration tool and this is available to the government at no cost. Expertise in FileMan will nevertheless still be required to execute this replication strategy.
 
 What full-fidelity FileMan-MongoDB replication is not:  
-* Not a generic process: No commercial tool or data platform has this capability.
-* Not a proprietary process: No vendor-proprietary tools or technology involved.
-* Not a  lift-and-shift process: Moving databases to a new datacenter does not fix data accessibility.
-* Not an  extract-transform-load (ETL) process: This ignores the FileMan model and replaces with a different one.
+* Not a generic process:: No commercial tool or data platform has this capability.
+* Not a proprietary process:: No vendor-proprietary tools or technology involved.
+* Not a  lift-and-shift process:: Moving databases to a new datacenter does not fix data accessibility.
+* Not an  extract-transform-load (ETL) process:  ETL ignores the FileMan model and replaces with a different one. This is an extract-load (EL) process which does not transform any of the 
 
 
 ### References
