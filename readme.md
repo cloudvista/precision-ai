@@ -26,15 +26,15 @@ Comprehensive extraction of VA Fileman  into a modern mainstream cloud-native da
 
 This will allow comprehensive access,  management, and query of all Veteran health data in a modern mainstream commercially-supported cloud-native database via unified modern APIs, making all VISTA data comprehensively available to all VA analytical systems  in the VA Enterprise Cloud. (Figure 1).
 
-A full, detailed report of all VISTA data migrated would be generated from the VISTA MongoDB replica to enable planning and scoping of data management for VA.  The report would contrast the FileMan data of each VISTA with the others.  The mechanisms used to make all the reports will serve as examples for how the MongoDB replica may easily be queried and processed in other projects going forward using the standard MongoDB tools, interfaces, and technology.
+A full, detailed report of all VISTA data migrated would be generated from the DocumentDB replica to enable planning and scoping of data management for VA.  The report would contrast the FileMan data of each VISTA with the others.  The mechanisms used to make all the reports will serve as examples for how the DocumentDB replica may easily be queried and processed in other projects going forward using the standard MongoDB tools, interfaces, and technology.
 
 
 ###  VISTA Cloud-native Document Database
-Criteria | VA Fileman database|  Cloud-native database
+Criteria | VA Fileman database|  Cloud-native database (DocumentDB)
 --- | --- | ---
-Function | Operations (transaction processing| Analtyics
+Function | Operations (transaction processing| Full-fidelity Analtyics
 Contents | All VistA data | All VistA data + refinements
-Model| Fileman Schema (data dictionary) | VistA Data Model (FileMan Schema Enhanced)
+Database Model| Fileman Schema | VistA Data Model (FileMan Schema Enhanced)
 Where | VistA | VA Enterprise Cloud 
 Support | VA-proprietary  | Commercial (mainstream, commodity )
 Indexing | Rigid; per-patient | Flexible; population
