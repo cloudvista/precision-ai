@@ -32,17 +32,18 @@ A full, detailed report of all VISTA data migrated would be generated from the V
 ###  VISTA Cloud-native Document Database
 Criteria | VA Fileman database|  Cloud-native database
 --- | --- | ---
-Function | Operations (transaction processing) | Analtyics
-Database Model | Document store | Document store
+Function | Operations (transaction processing| Analtyics
 Contents | All VistA data | All VistA data + refinements
+Model| Fileman Schema (data dictionary) | VistA Data Model (FileMan Schema Enhanced)
 Where | VistA | VA Enterprise Cloud 
 Support | VA-proprietary  | Commercial (mainstream, commodity )
-Indexing | Per Patient (rigid) | Population (flexible)
-Model| Fileman Schema (data dictionary) | VistA Data Model (FileMan Schema Enhanced)
-Access | Restricted to Operations* | As much as VAEC facilities allow
-Governance | Operations focused | Analytics focused, distinction of Clinical, Business and Operational data
+Indexing | Rigid; per-patient | Flexible; population
+Access | Restricted to Operations* | Cloud-scale
+Access mechanism | legacy M code | modern cloud-native unified API
+Governance | Operations focused | Analytics focused
+Data management |   | Allows distinction of Clinical, Business and Operational data
 
-* VA Fileman is neither designed for nor does it permit analytics workloads; it is designed as the operational database of VHA, and is optimized for performance and reliability.  VA Fileman enables 350,000 staff perform over 200 million transactions each day with sub-second latency and 99.999996% uptime (six sigma reliability).
+* VA Fileman is not designed for nor does it permit analytics workloads; it is designed as the operational database of VHA, and is optimized for performance and reliability.  VA Fileman enables 350,000 staff perform over 200 million transactions each day with sub-second latency and 99.999996% uptime (six sigma reliability).
 
 ### Benefits
 
