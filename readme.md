@@ -8,15 +8,15 @@
 ### Background
 
 
-The VHA Information Systems Technology and Architecture (VISTA) is the integrated lifelong healthcare delivery system designed and built by VA to support the clinical, business, and financial operations of the VHA. VISTA’s database contains over  300 million veteran-years of data spanning over 35 years and continues to grow at the rate of over four million new lab tests, documents, and images each day. VHA has published over 35,000 peer reviewed medical studies over the past decade based on VISTA data, enabling the VHA to provide the highest quality evidence-based healthcare in the United States.
+The Veterans Health Administration (VHA) Information Systems Technology and Architecture (VISTA) is the integrated lifelong healthcare delivery system designed and built by VA to support the clinical, business, and financial operations of the VHA. VISTA’s database contains over  300 million veteran-years of data spanning over 35 years and continues to grow at the rate of over four million new lab tests, documents, and images each day. VHA has published over 35,000 peer reviewed medical studies over the past decade based on VISTA data, enabling the VHA to provide the highest quality evidence-based healthcare in the United States.
 
-VISTA’s VA-designed and developed database is a hierachical file store called VA Fileman (File Manager). VA Fileman contains over 6,000 files and 75,000 fields with cross-references and pointers connecting all of these files and fields in a well-defined data model. In present day terms, VA Fileman would be classified as a Document database, for which there are several commercial off-the-shelf versions available (MongoDB, DocumentDB, and others).
+VISTA's database is a VA-developed hierachical file store called VA File Manager (VA Fileman). VA Fileman contains over 6,000 files and 75,000 fields with cross-references and pointers connecting all of these files and fields in a well-defined data model. In present day terms, VA Fileman would be classified as a Document database, for which there are several commercial off-the-shelf versions available (MongoDB, DocumentDB, and others).
 
 ### Problem statement
 
-VA Fileman is the operational database of VHA. It is optimized for transaction processing, performance, and reliability for veteran care. Each day Fileman enables 350,000 staff perform over 200 million transactions with sub-second latency and 99.999996% uptime (six-sigma reliability). Fileman is indexed on a per-patient basis and optimized for performance for the clinical staff to provide veteran care. Fileman is not indexed or designed for research, analytics, or population queries.
+VA Fileman is the operational database of VHA managing the operations of over 1250 hospitals and clinics across the United States. It is optimized for transaction processing, performance, and reliability for veteran care. Each day VA Fileman enables 350,000 staff perform over 200 million transactions with sub-second latency and 99.999996% uptime (six-sigma reliability). VA Fileman is indexed on a per-patient basis and optimized for performance for the clinical staff to provide veteran care. VA Fileman is not indexed or designed for research, analytics, or population queries.
 
-Over the years, VA has developed several mechanisms to extract subsets of FileMan data for secondary use and analytics, but there is no comprehensive mechanism to export, query, and manage all FileMan data.  Only a relatively small subset of FileMan's operational data is accessible to analytical systems, creating blind spots that may affect the quality of research, trustworthiness of AI models, and accuracy of clinical decision support systems.
+Over the years, VA has developed several mechanisms to extract subsets of VA Fileman data for secondary use and analytics, but there is no comprehensive mechanism to export, query, and manage all Fileman data.  Only a relatively small subset of Fileman's operational data is accessible to analytical systems, creating blind spots that may affect the quality of research, trustworthiness of AI models, and accuracy of clinical decision support systems.
 
 A comprehensive approach is thus needed to provide full-fidelity access to VISTA data for interfacing, integration, and syndication of VISTA data with new cloud-native reporting and research systems, and to support full-fidelity machine learning, analytics, and clinical decision support. A modern, mainstream, commercially maintainable database for VISTA data is also necessary for VA to meet VHA data governance mandate, which requires VHA to store all veterans health data in digital form for 75 years.
 
@@ -24,7 +24,7 @@ A comprehensive approach is thus needed to provide full-fidelity access to VISTA
 
 Comprehensive extraction of VA Fileman  into a modern mainstream cloud-native database of the identical form (document database), preserving all Fileman data and nuance (all files, all fields, all pointers, all cross reference, all metadata) 
 
-This will allow comprehensive access,  management, and query of all Veteran health data in a modern mainstream commercially-supported cloud-native database via unified modern APIs, making all VISTA data comprehensively available to all VA analytical systems  in the VA Enterprise Cloud. (Figure 1).
+This will allow comprehensive access,  management, and query of all Veteran health data in a modern mainstream commercially-supported cloud-native database via unified modern API, making all VISTA data comprehensively available to all VA analytical systems in the VA Enterprise Cloud. (Figure 1).
 
 A full, detailed report of all VISTA data migrated would be generated from the DocumentDB replica to enable planning and scoping of data management for VA.  The report would contrast the FileMan data of each VISTA with the others.  The mechanisms used to make all the reports will serve as examples for how the DocumentDB replica may easily be queried and processed in other projects going forward using the standard MongoDB tools, interfaces, and technology.
 
@@ -43,7 +43,7 @@ Access mechanism | legacy, proprietary interfaces | modern cloud-native API
 Governance | Operations focused | Analytics focused
 Data management | Minimal; inadequate tools  | Allows distinction of Clinical, Business and Operational data
 
-[1] All Vista data means  
+[1] All Vista data means lossless, full-fidelity replica of all VA Fileman's 5500 files, 65,000 fields, and all of the cross references, pointers, indexes, and metadata connecting all of these in a well defined VISTA Data Model (VDM)
 [2] VA Fileman is not designed for nor does it permit analytics workloads; it is designed as the operational database of VHA, and is optimized for performance and reliability.  VA Fileman enables 350,000 staff perform over 200 million transactions each day with sub-second latency and 99.999996% uptime (six sigma reliability).
 
 ### Benefits
