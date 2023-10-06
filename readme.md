@@ -18,7 +18,7 @@ VA Fileman is the operational database of VHA. It is optimized for transaction p
 
 Over the years, VA has developed several mechanisms to extract subsets of FileMan data for secondary use and analytics, but there is no comprehensive mechanism to export, query, and manage all FileMan data.  Only a relatively small subset of FileMan's operational data is accessible to analytical systems, creating blind spots that may affect the quality of research, trustworthiness of AI models, and accuracy of clinical decision support systems.
 
-A comprehensive approach is thus needed to provide full-fidelity access to VISTA data for interfacing, integration, and syndication of VISTA data with new cloud-native reporting and research systems, and to support full-fidelity machine learning, analytics, and clinical decision support. A modern, mainstream, commercially maintainable database is also necessary by VA to meet VHA data governance mandates which requires portability and access to veteran health data in computable form for 75 years.
+A comprehensive approach is thus needed to provide full-fidelity access to VISTA data for interfacing, integration, and syndication of VISTA data with new cloud-native reporting and research systems, and to support full-fidelity machine learning, analytics, and clinical decision support. A modern, mainstream, commercially maintainable database for VISTA data is also necessary for VA to meet VHA data governance mandate, which requires VHA to store all veterans health data in digital form for 75 years.
 
 ### Proposal
 
@@ -30,20 +30,21 @@ A full, detailed report of all VISTA data migrated would be generated from the D
 
 
 ###  VISTA Cloud-native Document Database
-Criteria | VA Fileman database|  Cloud-native database (DocumentDB)
+Criteria | VA Fileman database |  Cloud-native database
 --- | --- | ---
-Function | Operations (transaction processing| Full-fidelity Analtyics
-Contents | All VistA data | All VistA data + refinements
+Function | Operations | Analtyics
+Contents | All VistA data [1] | All VistA data + refinements
 Database Model| Fileman Schema | VistA Data Model (FileMan Schema Enhanced)
 Where | VistA | VA Enterprise Cloud 
-Support | VA-proprietary  | Commercial (mainstream, commodity )
+Support | VA-proprietary  | Commodity, commercial, mainstream
 Indexing | Rigid; per-patient | Flexible; population
-Access | Restricted to Operations* | Cloud-scale
-Access mechanism | legacy M code | modern cloud-native unified API
+Access | Restricted to Operations [2] | Limited only to facilities of VAEC
+Access mechanism | legacy, proprietary interfaces | modern cloud-native API
 Governance | Operations focused | Analytics focused
-Data management |   | Allows distinction of Clinical, Business and Operational data
+Data management | Minimal; inadequate tools  | Allows distinction of Clinical, Business and Operational data
 
-* VA Fileman is not designed for nor does it permit analytics workloads; it is designed as the operational database of VHA, and is optimized for performance and reliability.  VA Fileman enables 350,000 staff perform over 200 million transactions each day with sub-second latency and 99.999996% uptime (six sigma reliability).
+[1] All Vista data means  
+[2] VA Fileman is not designed for nor does it permit analytics workloads; it is designed as the operational database of VHA, and is optimized for performance and reliability.  VA Fileman enables 350,000 staff perform over 200 million transactions each day with sub-second latency and 99.999996% uptime (six sigma reliability).
 
 ### Benefits
 
