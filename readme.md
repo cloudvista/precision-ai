@@ -34,7 +34,7 @@ DocumentDB-based FileMan data provides comprehensive access to all Veteran data 
 
 Preserving the FileMan "framing" for data ensures preservation of the semantics of all VISTA data without the requiring a laborious and largely manually created data reframing which could never encompass all the data of a VISTA system in a timely or cost-effective fashion.
 
-###  VISTA Cloud-native Document Database
+###  VISTA Cloud-native Database
 Criteria | VA Fileman database  |  Cloud-native database
 --- | --- | ---
 Function | Operations | Analtyics
