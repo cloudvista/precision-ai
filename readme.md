@@ -43,7 +43,7 @@ Access mechanism | legacy, proprietary interfaces | modern cloud-native API
 Governance | Operations focused | Analytics focused
 Data management | Minimal; inadequate tools  | Allows distinction of Clinical, Business and Operational data
 
-[1] All Vista data means lossless, full-fidelity replica of all VA Fileman's 5500 files, 65,000 fields, and all of the cross references, pointers, indexes, and metadata connecting all of these in a well defined VISTA Data Model (VDM)
+[1] All Vista data means lossless, full-fidelity replica of all VA Fileman's 5500 files, 65,000 fields, and all of the cross references, pointers, indexes, and metadata connecting all of these in a well defined VISTA Data Model (VDM)  
 [2] VA Fileman is not designed for nor does it permit analytics workloads; it is designed as the operational database of VHA, and is optimized for performance and reliability.  VA Fileman enables 350,000 staff perform over 200 million transactions each day with sub-second latency and 99.999996% uptime (six sigma reliability).
 
 ### Benefits
