@@ -22,9 +22,7 @@ A comprehensive approach is thus needed to provide full-fidelity access to VISTA
 
 ### Proposal
 
-Comprehensive extraction of VA Fileman  into a modern mainstream cloud-native database of the identical form (document database), preserving all Fileman data and nuance (all files, all fields, all pointers, all cross reference, all metadata) 
-
-This will allow comprehensive access,  management, and query of all Veteran health data in a modern mainstream commercially-supported cloud-native database via unified modern API, making all VISTA data comprehensively available to all VA analytical systems in the VA Enterprise Cloud. (Figure 1).
+Comprehensive extraction of VA Fileman into a modern mainstream cloud-native database of the identical form (document database) while preserving all Fileman data and nuance (all files, fields, pointers, cross reference, and metadata).  This will allow comprehensive access,  management, and query of all Veteran health data in a modern mainstream commercially-supported cloud-native database via an industry-standard query API, making all VISTA data comprehensively available at full-fidelity to all VA analytical and AI systems. (Figure 1).
 
 A full, detailed report of all VISTA data migrated would be generated from the DocumentDB replica to enable planning and scoping of data management for VA.  The report would contrast the FileMan data of each VISTA with the others.  The mechanisms used to make all the reports will serve as examples for how the DocumentDB replica may easily be queried and processed in other projects going forward using the standard MongoDB tools, interfaces, and technology.
 
@@ -35,18 +33,18 @@ DocumentDB-based FileMan data provides comprehensive access to all Veteran data 
 Preserving the FileMan "framing" for data ensures preservation of the semantics of all VISTA data without the requiring a laborious and largely manually created data reframing which could never encompass all the data of a VISTA system in a timely or cost-effective fashion.
 
 ###  VISTA Cloud-native Database
-Criteria | VA Fileman database  |  Cloud-native database
+Criteria | VA Fileman database <br>(current) |  Cloud-native database <br> (DocumentDB)
 --- | --- | ---
 Function | Operations | Analytics
-Contents | All VistA data [1] | All VistA data
+Contents | All VistA data [1] | identical
 Volume | All veteran health data spanning 35 years | identical
-Variety | 5500 files, 75,000 fields | identical
-Veracity | All pointers, cross references, indexes, metadata |identical (+ refinements)
-Model | Fileman Schema | FileMan Schema  (+ Enhancements: Vista Data Model)
+Variety | All 5500 files, 75,000 fields | identical
+Veracity | All pointers, cross references, indexes, metadata |identical + refinements
+Model | Fileman Schema | identical + enhancements <br>(Vista Data Model)<br>
 Storage | VistA | VA Enterprise Cloud
-Support | VA-proprietary  | Commodity, commercial, mainstream
+Support | VA-proprietary  | Commodity, mainstream, commercial support
 Indexing | Rigid; per-patient | Flexible; population
-Access | Restricted to Operations [2] | Cloud-scale
+Access | Restricted to Operations [2] | Secure cloud-scale
 Access mechanism | hard-coded, brittle, proprietary, opaque | flexible, modern, open universal API
 Governance | Operations focused | Analytics focused
 Data management | Minimal; inadequate tools  | Allows distinction of Clinical, Business and Operational data
@@ -62,7 +60,7 @@ Data management | Minimal; inadequate tools  | Allows distinction of Clinical, B
 
 VistA<br>Data | Details
 ---|---
- ![db-search](https://github.com/vistadataproject/documents/blob/master/images/logos/logos-db/50h/db-search.jpg) <br> __Access__ | __A single, universal, industry-standard mechanism for reading and writing *all VISTA data*.__ <br> This mechanism is unified by the read model and the write write model integrated into a single, symmetric-read-write data model (VDM), with all data in industry-standard web formats. *This overcomes the well understood shortcoming with VISTA Data Read and Write, which uses completely unique code, models, and mechanisms for reading data as distinct from writing data. Furthermore, the 20+ year old RPCs - over 3300 MUMPS routines which encapsulate all these idiosyncratic approaches (written *exclusively* and in lock-step with the the Delphi code of CPRS, and none of which are documented or maintained) simply cannot be relied on going forward, particularly for generic, external non-CPRS interfaces and clients.*
+ ![db-search](https://github.com/vistadataproject/documents/blob/master/images/logos/logos-db/50h/db-search.jpg) <br> __Access__ | __A single, universal, industry-standard mechanism for securely querying and accessing *all VISTA data*.__ <br>  *This overcomes the well understood shortcoming with VISTA data access, which uses hundreds of  unique code, models, and mechanisms for reading data. Furthermore, the 20+ year old RPCs - over 3300 MUMPS routines which encapsulate all these idiosyncratic approaches (written in lock-step with the the Delphi code of CPRS, and none of which are documented or maintained) cannot be relied on going forward, particularly for generic, external non-CPRS interfaces and clients.*
 ![db-integrity](https://github.com/vistadataproject/documents/blob/master/images/logos/logos-db/50h/db-integrityA.jpg) <br> __Integrity__| __Comprehensive, automated, standardized, strict data integrity enforcement for  *all VISTA data*.__ <br> *This is a major improvement over the hodgepodge of legacy, ad-hoc methods that have accumulated over the past 35 years (HL7, RPCs, MUMPS, procedural code), none of which are documented, and all of which are inconsistent, unpredictable, and highly permissive*.  See also: [Master Data Management](https://en.wikipedia.org/wiki/Master_data_management)
 ![db-security](https://github.com/vistadataproject/documents/blob/master/images/logos/logos-db/50h/db-security.jpg) <br> __Security__ | __Comprehensive, industry-standard, fine-grained, data-centric security for *all VISTA data*.__ <br> Currently VISTA provides security for only a small fraction of its data, and does this through bespoke, complex, opaque, and unmaintainable methods hardwired to a legacy terminal interface and its 9000+ terminal menu options. <br> __Data-centric, attribute-based security__ is the foundation for all other security levels and technologies, because without knowledge of the data and its logical attributes, it will not be possible to provide the appropriate security measures on the data. <br>__Through metadata enrichment of the VISTA Data Model__, VISTA will know *what categories of data it is managing* and thus allow, for the first time, comprehensive, data-centric, attribute-based security "on-the-data" for all VISTA data, permitting the secure exchange of data. See [Data-Centric Security](https://en.wikipedia.org/wiki/Data-centric_security),  [Logical Security](http://www.mdpi.com/1999-5903/4/4/929/htm#fig_body_display_futureinternet-04-00929-f001), [Semantic Security](https://www.google.com/search?q=semantic+data+security&sa=X&biw=1154&bih=1062&tbm=isch&tbo=u&source=univ&ved=0ahUKEwi_14b--JXLAhWKOz4KHWghAVEQsAQIgwE) and [Attribute-Based Access Control (ABAC)](http://csrc.nist.gov/projects/abac)
 
