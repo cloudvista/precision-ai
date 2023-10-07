@@ -38,11 +38,11 @@ Preserving the FileMan "framing" for data ensures preservation of the semantics 
 Criteria | VA Fileman database  |  Cloud-native database
 --- | --- | ---
 Function | Operations | Analytics
-Contents | All VistA data [1] | __identical + refinements__
-Volume | Vetearn data spanning 35 years | __identical__
-Variety | 5500 files, 75,000 fields | __identical__
-Veracity | All pointers, cross references, indexes, metadata |__identical + refinements__
-Model | Fileman Schema | FileMan Schema + Enhancements (Vista Data Model)
+Contents | All VistA data [1] | All VistA data
+Volume | All veteran health data spanning 35 years | identical
+Variety | 5500 files, 75,000 fields | identical
+Veracity | All pointers, cross references, indexes, metadata |identical (+ refinements)
+Model | Fileman Schema | FileMan Schema  (+ Enhancements: Vista Data Model)
 Storage | VistA | VA Enterprise Cloud
 Support | VA-proprietary  | Commodity, commercial, mainstream
 Indexing | Rigid; per-patient | Flexible; population
