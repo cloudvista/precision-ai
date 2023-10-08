@@ -39,8 +39,8 @@ Function | Operations | Analytics
 Contents | All VistA data [1] | identical
 Volume | All veteran health data spanning 35 years | identical
 Variety | All 5500 files, 75,000 fields | identical
-Veracity | All pointers, cross references, indexes, metadata |identical + refinements
-Model | Fileman Schema | identical + enhancements <br>(Vista Data Model)<br>
+Veracity | All pointers, cross references, indexes, metadata |identical + enhancements [refined, categorized, normalized, indexed]
+Model | Fileman Schema | identical + enhancements [refined, categorized, normalized, indexed] <br>(Vista Data Model)<br>
 Storage | VistA | VA Enterprise Cloud
 Support | VA-proprietary  | Commodity mainstream commercial support
 Indexing | Rigid; per-patient | Flexible; population
