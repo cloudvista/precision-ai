@@ -39,13 +39,13 @@ Function | Operations | Analytics
 Contents | All VistA data [1] | identical
 Volume | All veteran health data spanning 35 years | identical
 Variety | All 5500 files, 75,000 fields | identical
-Veracity | All pointers, cross references, indexes, metadata |identical 
-Model | Fileman Schema | identical + enhancements <br>(categorized, normalized, indexed) <br>
+Veracity | All pointers, cross references, indexes |identical + refined
+Model | Fileman Schema | identical + enhanced <br>(categorized, normalized, indexed) <br>
 Storage | VistA | VA Enterprise Cloud
 Support | VA-proprietary  | Commodity mainstream commercial support
 Indexing | Rigid; per-patient | Flexible; population
 Access | Restricted to Operations [2] | Secure cloud-scale
-Access mechanism | hard-coded proprietary opaque extractors | open flexible universal API
+Access mechanism | thousands of unique, opaque hard-coded extractors | single open universal API
 Governance | Operations focused | Analytics focused
 Data management | Minimal. Inadequate access and tools  | Comprehensive. Allows distinction of Clinical, Business and Operational data
 
@@ -54,7 +54,7 @@ Data management | Minimal. Inadequate access and tools  | Comprehensive. Allows 
 
 
 
-## VISTA Cloud-native Database Features
+### VISTA Cloud-native Database Features
 
 *__A Cloud-native VISTA database provides VA with three key transformational capabilities:__*
 
