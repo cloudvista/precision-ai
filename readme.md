@@ -1,5 +1,5 @@
 
-## VISTA Cloud-Native Database for Precision AI and Analytics
+## Cloud-Native Vista mirror for Precision AI and Analytics
 
 
 ![cloud analytics overview](img/cloudvista-precision-AI.png)
