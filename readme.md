@@ -2,7 +2,7 @@
 #### Cloud *VISTA* Precision AI and Analytics
 
 
-![cloud analytics overview](img/vista-ai-cloud.png)
+![cloud analytics overview](img/cloudvista-ai.png)
 
 
 ### Background
