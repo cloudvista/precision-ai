@@ -33,7 +33,7 @@ DocumentDB-based FileMan data provides comprehensive access to all Veteran data 
 Preserving the FileMan "framing" for data ensures preservation of the semantics of all VISTA data without the requiring a laborious and largely manually created data reframing which could never encompass all the data of a VISTA system in a timely or cost-effective fashion.
 
 ###  VISTA Cloud-native Database
-Criteria | VistA database <br>(VA FileMan) |  Cloud-native database <br> (DocumentDB)
+Criteria | VistA database <br>(VA FileMan) |  Cloud-native database <br> (MongoDB)
 --- | --- | ---
 Function | Operations | Analytics
 Contents | All VistA data [1] | identical
@@ -49,7 +49,7 @@ Access mechanism | thousands of unique, opaque hard-coded extractors | single op
 Governance | Operations focused | Analytics focused
 Data management | Minimal. Inadequate access and tools  | Comprehensive. Allows distinction of Clinical, Business and Operational data
 
-[1] All Vista data means lossless, full-fidelity replica of all VA Fileman's 5500 files, 65,000 fields, and all of the cross references, pointers, indexes, and metadata connecting all of these in a well defined VISTA Data Model (VDM)  
+[1] "All Vista data" means full-fidelity replication of all VA Fileman's 5500 files, 65,000 fields with full context, including all cross references, pointers, indexes, and metadata connecting all of these in a well defined VISTA Data Model (VDM)  
 [2] VA Fileman is not designed for nor does it permit analytics workloads; it is designed as the operational database of VHA, and is optimized for performance and reliability.  VA Fileman enables 350,000 staff perform over 200 million transactions each day with sub-second latency and 99.999996% uptime (six sigma reliability).
 
 
