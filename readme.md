@@ -2,7 +2,7 @@
 ## Cloud-Native Vista for Precision AI and Analytics
 
 
-![cloud analytics overview](img/cloudvista-precision-AI.png)
+![cloud analytics overview](img/vista-ai-cloud.png)
 
 
 ### Background
