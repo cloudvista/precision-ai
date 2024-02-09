@@ -1,5 +1,5 @@
 
-#### Cloud *VISTA* Precision AI and Analytics
+#### VHA Precision AI and Analytics
 
 
 ![cloud analytics overview](img/cloudvista-ai.png)
