@@ -2,7 +2,7 @@
 #### VHA Precision AI and Analytics
 
 
-![cloud analytics overview](img/cloudvista-ai.png)
+![cloud analytics overview](img/cloudvista-precision-AI3.png)
 
 
 ### Background
